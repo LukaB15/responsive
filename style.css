@@ -1,0 +1,103 @@
+
+@media screen and (max-width:410px) {
+    body{
+    background-color: red;
+   
+}
+
+#small h1{
+    font-size: 20px;
+}
+#small p{
+    font-size: 10px;
+}
+#medium h1{
+    font-size: 20px;
+}
+#medium p{
+    font-size: 10px;
+}
+#large h1{
+    font-size: 20px;
+}
+#large p{
+    font-size: 10px;
+}
+#small{
+    position: absolute;
+}
+#medium{
+    position: absolute;
+}
+#large{
+    position: absolute;
+}
+
+}
+
+@media screen and (max-width:768px) and (min-width:410px) {
+    body{
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+#small h1{
+    font-size: 30px;
+}
+#small p{
+    font-size: 15px;
+}
+#medium h1{
+    font-size: 30px;
+}
+#medium p{
+    font-size: 15px;
+}
+#large h1{
+    font-size: 30px;
+}
+#large p{
+    font-size: 15px;
+}
+#small{
+    grid-area: 1 / 1 / 2 / 3;
+}
+#medium{
+    grid-area: 1 / 3 / 2 / 4;
+}
+#large{
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+
+}
+
+@media screen and (min-width:768px) {
+    body{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    }
+    #small h1{
+        font-size: 50px;
+    }
+    #small p{
+        font-size: 20px;
+    }
+    #medium h1{
+        font-size: 50px;
+    }
+    #medium p{
+        font-size: 20px;
+    }
+    #large h1{
+        font-size: 50px;
+    }
+    #large p{
+        font-size: 20px;
+    }
+    
+}
